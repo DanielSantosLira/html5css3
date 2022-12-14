@@ -10,7 +10,7 @@ Aprenda HTML5 , CSS3  e SEO  de forma simples, prática  e  objetiva  desenvolve
 ### Personal designer
 [matheus da costa ](https://matheusdacosta.art.br/)
 
-###Tipografia
+### Tipografia
 [google fonts](https://fonts.google.com/)
 
 ### Imagens
