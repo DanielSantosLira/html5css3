@@ -12,13 +12,12 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 /*Layout*/
 .Conteiner {
   margin: 0 auto;
-  
 
 }
 
@@ -26,6 +25,16 @@ body {
   display: flex;
   justify-content: space-between;
   
+}
+.Botao{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 700;
+  background-color: #c00000;
+  padding: 10px 40px;
+  border: 2px solid #fff;
+  border-radius: 25px;
 }
 
 /* topo do site*/
@@ -37,7 +46,7 @@ body {
 
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>*/
 
-/* Cbeçalho */
+/* Cabeçalho */
 header {
   height: 60px;
 }
@@ -60,7 +69,7 @@ nav ul {
   position: fixed;
   top: 60px;
   right: -100%;
-  height: 100%;
+  width: 100%;
   transition: all 0.5s;
 }
 #check:checked ~ ul{
@@ -75,12 +84,33 @@ nav ul li a{
   text-decoration: none;
   color: #fff;
 }
-
+/* Destaque*/
+main{
+  height: 75vh;
+  background: url(img/banner.jpg);
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+main h1{
+  font-size: 2.5em;
+}
+main h2{
+  font-size: 1em;
+  margin: 20px 0px 50px 0px;
+}
 /* Smartphone Landscape */
 @media (min-width: 576px) {
   /*Layout*/
   .Conteiner {
     max-width: 540px;
+  }
+  /* Destaque*/
+  main h1, main h2{
+    text-shadow: #000 0.5em 0.05em 0.5em;
   }
 }
 
@@ -90,6 +120,16 @@ nav ul li a{
   .Conteiner {
     max-width: 720px;
   }
+  main{
+    height: 45vh;
+  }
+  main h1{
+    font-size: 5.5em;
+  }
+  main h2{
+    font-size: 2em;
+  }
+
 }
 
 /* Tablet Landscape<<<<<<<<<<<<<<<<<<<<<*/
@@ -98,6 +138,9 @@ nav ul li a{
   /*Layout*/
   .Conteiner {
     max-width: 960px;
+  }
+  main{
+    height: 70vh;
   }
 }
 
@@ -108,6 +151,9 @@ nav ul li a{
 .Conteiner {
   max-width: 1400px;
   
+}
+header{
+  height: 120px;
 }
 
 #logo img {
