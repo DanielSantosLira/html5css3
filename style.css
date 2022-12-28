@@ -1,40 +1,138 @@
-/* CSS Rste*/
-*{
-    margin: 0;
-    border: 0;
-    padding: 0;
-}
 /*Importação (Google Fontes*/
 @import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@800&family=Fjalla+One&family=Inter:wght@100;200;300;400;500;600&family=Noto+Sans:ital,wght@1,600&family=Open+Sans:wght@400;700&family=Roboto:ital,wght@1,700&family=Titillium+Web&display=swap');
 
-body{
-    font-family: 'Open Sans', sans-serif;
+
+/* CSS Rste*/
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
 }
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+/*Layout*/
+.Conteiner {
+  margin: 0 auto;
+  
+
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+/* topo do site*/
+#topo {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>*/
 
+/* Cbeçalho */
+header {
+  height: 60px;
+}
+
+#logo img {
+  width: 128px;
+  height: 128px;
+}
+#check{
+  display: none;
+}
+label{
+  font-size: 3em;
+  padding-right: 15px;
+}
+nav ul {
+  list-style: none;
+  background-color: #343538;
+  height: 100vh;
+  position: fixed;
+  top: 60px;
+  right: -100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+#check:checked ~ ul{
+right: 0;
+}
+nav ul li{
+  padding: 20px;
+  border-bottom: 1px solid #a9a9a9;
+
+}
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+
 /* Smartphone Landscape */
-@media (min-width: 576px){
-  body{
-    background-color: #0ff;
+@media (min-width: 576px) {
+  /*Layout*/
+  .Conteiner {
+    max-width: 540px;
   }
 }
 
-
 /* Tablet Portrait >>>>>>>>>>>>>>>>.*/
-@media (min-width: 768px){
-    body{
-      background-color: #ff0;
-    }
+@media (min-width: 768px) {
+  /*Layout*/
+  .Conteiner {
+    max-width: 720px;
   }
-  /* Tablet Landscape<<<<<<<<<<<<<<<<<<<<<*/
-  @media (min-width: 992px){
-    body{
-      background-color: #ff6600;
-    }
+}
+
+/* Tablet Landscape<<<<<<<<<<<<<<<<<<<<<*/
+@media (min-width: 992px) {
+
+  /*Layout*/
+  .Conteiner {
+    max-width: 960px;
   }
-  /* PC >>>>>>>>>>>>>>>>>*/
-  @media (min-width: 1200px){
-    body{
-      background-color: #f00;
-    }
-  }
+}
+
+/* PC >>>>>>>>>>>>>>>>>*/
+@media (min-width: 1200px) {
+
+/*Layout*/
+.Conteiner {
+  max-width: 1400px;
+  
+}
+
+#logo img {
+  width: 189px;
+  height: 189px;
+  margin-top: 30px;
+}
+label{
+  display: none;
+}
+ nav ul {
+  position: static;
+  height: auto;
+  background-color: transparent;
+  margin-top: 50px;
+ }
+ nav ul li{
+  float: left;
+  border: 0;
+
+ }
+ nav ul li a{
+  color: #343538;
+ }
+ nav ul li a:hover{
+  color: #c00000;
+ }
+}
