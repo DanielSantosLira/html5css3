@@ -159,6 +159,7 @@ main h2{
 #vidio iframe{
  width: 340px;
  height: 191px;
+ border: 0;
 }
 
 /* Smartphone Landscape */
