@@ -159,8 +159,6 @@ main h2{
 #vidio iframe{
  width: 340px;
  height: 191px;
- padding-left: 10px;
-
 }
 
 /* Smartphone Landscape */
@@ -266,5 +264,6 @@ label{
  /* One page*/
  .flex3{
   flex-direction: row;
+  align-items: center;
  }
 }
