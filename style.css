@@ -48,6 +48,7 @@ body {
 }
 .flex6{
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
 }
 
