@@ -160,7 +160,32 @@ main h2{
  width: 340px;
  height: 191px;
  border: 0;
+ margin-left: 15px;
 }
+/* Wierefreme*/
+#wireframe{
+  padding: 50px 0px;
+  background: url(img/background.png);
+  background-size: cover;
+  background-position: center;
+}
+#textoWire{
+  color: #fff;
+  padding: 0px 10px  ;
+}
+#textoWire h2{
+  margin-bottom: 10px;
+}
+#textoWire p{
+  margin-bottom: 40px;
+}
+#textoWire span{
+  display: none;
+}
+#qrcode{
+  display: none;
+}
+
 
 /* Smartphone Landscape */
 
@@ -266,5 +291,22 @@ label{
  .flex3{
   flex-direction: row;
   align-items: center;
+ }
+  
+ /*Wirefreme*/
+ #wireframe{
+  background-attachment: fixed;
+ }
+ #wireframe span{
+  display: inline;
+  color: #000;
+ }
+ #qrcode{
+  display: inline;
+ }
+ 
+ #qrcode img {
+  width: 255px;
+  height: 225px;
  }
 }
