@@ -285,7 +285,7 @@ footer{
 
 /* Smartphone Landscape */
 
-@media (min-width: 586px) {
+@media (min-width: 576px) {
   /*Layout*/
   .Conteiner {
     max-width: 540px;
